@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Chilli's food ordering system</title>
+</head>
+<body>
+
+    <h1>沒有共產黨就沒有新中國... the ordering system!</h1>
+
+    <h3>Menu:</h3>
+    <form>
+        <label><input type="checkbox" id="Spicy_Szechuan_Nuggets"> Spicy Szechuan Nuggets (70 yuan)</label><br>
+        <label><input type="checkbox" id="Mapo_Tofu_Curry"> Mapo Tofu Curry (60 yuan)</label><br>
+        <label><input type="checkbox" id="Dim_Sum_Platter"> Dim Sum Platter (50 yuan)</label><br>
+        <label><input type="checkbox" id="Peking_Duck"> Peking Duck (40 yuan)</label><br>
+        <label><input type="checkbox" id="Lechon_Macau"> Lechon Macau (60 yuan)</label><br>
+    </form>
+
+    <h3>Customer Details:</h3>
+    <input type="text" id="name" placeholder="Enter your name" required><br>
+    <input type="text" id="address" placeholder="Enter your address" required><br>
+    <input type="text" id="contact" placeholder="Enter your contact number" required><br><br>
+
+    <button py-click="process_order">Create Order</button>
+
+    <div id="output" style="margin-top: 20px;"></div>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
+
+
+
+    <!--<input type="text" id="input1" placeholder="Enter your name" required><br>
+        <input type="number" id="input2" placeholder="Enter your age" required><br>
+        <button type="button" py-click="process_inputs">Submit</button>-->
